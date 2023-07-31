@@ -1,0 +1,197 @@
+:root {
+  --clr-accent-primary: rgba(229, 32, 32, 0.975);
+  --clr-accent-secondary: #512d21;
+  --clr-accent-black: #212121;
+
+  --ff-primary: "Bebas Neue", sans-serif;
+  --ff-accent: "Bebas Neue", sans-serif;
+
+  --fc-white: #f0efef;
+  --fc-neutral: #dfddd5;
+  --fc-black: #212121;
+
+  --bg-color: #dfddd5;
+
+  --lg-font-size-h1: 80px;
+  --lg-font-size-h2: 60px;
+  --lg-font-size-h3: 36px;
+  --lg-font-size-h4: 21px;
+  --lg-font-size-h5: 15px;
+  --lg-font-size-h6: 12px;
+  --lg-font-size-body: 13px;
+
+  --font-size-h1: 80px;
+  --font-size-h2: 60px;
+  --font-size-h3: 36px;
+  --font-size-h4: 21px;
+  --font-size-h5: 15px;
+  --font-size-h6: 12px;
+  --font-size-body: 13px;
+
+  --md-font-size-h1: 64px;
+  --md-font-size-h2: 45px;
+  --md-font-size-h3: 32px;
+  --md-font-size-h4: 20px;
+  --md-font-size-h5: 13px;
+  --md-font-size-h6: 10px;
+  --md-font-size-body: 12px;
+
+  --sm-font-size-h1: 64px;
+  --sm-font-size-h2: 45px;
+  --sm-font-size-h3: 32px;
+  --sm-font-size-h4: 20px;
+  --sm-font-size-h5: 13px;
+  --sm-font-size-h6: 10px;
+  --sm-font-size-body: 12px;
+
+  --line-height-h1: 1em;
+  --line-height-h2: 1.2em;
+  --line-height-h3: 1.2em;
+  --line-height-h4: 1.2em;
+  --line-height-h5: 1.2em;
+  --line-height-h6: 1.2em;
+  --line-height-body: 1.5em;
+
+  --sm-header-height: 60px;
+  --header-height: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+  color: var(--fc-black);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  line-height: var(--line-height-h1);
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: var(--line-height-h2);
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: var(--line-height-h3);
+}
+
+h4 {
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: var(--line-height-h4);
+}
+
+p {
+  line-height: var(--line-height-body);
+}
+
+button {
+  cursor: pointer;
+}
+
+.section_heading {
+  border-bottom: 3px solid black;
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+/* Shop Component */
+.container {
+  max-width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: var(--sm-font-size-h1);
+  }
+
+  h2 {
+    font-size: var(--sm-font-size-h2);
+  }
+
+  h3 {
+    font-size: var(--sm-font-size-h3);
+  }
+
+  h4 {
+    font-size: var(--sm-font-size-h4);
+  }
+
+  p {
+    font-size: var(--sm-font-size-body);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: var(--md-font-size-h1);
+  }
+
+  h2 {
+    font-size: var(--md-font-size-h2);
+  }
+
+  h3 {
+    font-size: var(--md-font-size-h3);
+  }
+
+  h4 {
+    font-size: var(--md-font-size-h4);
+  }
+
+  p {
+    font-size: var(--md-font-size-body);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 60px 0px;
+    padding: 0 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: var(--lg-font-size-h1);
+  }
+
+  h2 {
+    font-size: var(--lg-font-size-h2);
+  }
+
+  h3 {
+    font-size: var(--lg-font-size-h3);
+  }
+
+  h4 {
+    font-size: var(--lg-font-size-h4);
+  }
+
+  .container {
+    margin: 60px 0px;
+    padding: 0 100px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

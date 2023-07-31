@@ -1,0 +1,64 @@
+.home {
+  height: 900px;
+  font-family: var(--ff-accent);
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 40px;
+  background-image: url("../../public/hero_img_horiz.jpg");
+  background-size: cover;
+}
+
+.home__img {
+  position: absolute;
+  z-index: -1;
+  right: 50%;
+  height: 900px;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  background-color: rgba(0, 255, 0, 0.835);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  transform: rotate(50deg);
+}
+
+.home__span {
+  font-style: italic;
+  border-bottom: 3px solid var(--clr-accent-primary);
+}
+
+.floater_one {
+  position: absolute;
+  font-size: 50rem;
+  right: 20%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .home {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

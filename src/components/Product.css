@@ -1,0 +1,74 @@
+/* Item Component */
+.item {
+  height: 700px;
+  max-width: 600px;
+  padding: 0px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  font-family: var(--ff-primary);
+  font-weight: 500;
+}
+
+.item img {
+  margin-bottom: 8px;
+}
+
+.item__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.item__info > p {
+  font-size: 1.2rem;
+}
+
+.item__button {
+  height: 40px;
+  width: 140px;
+  align-self: flex-end;
+  margin-top: 16px;
+  background-color: var(--clr-accent-black);
+  border-radius: 2px;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 14px;
+}
+
+.item__button:hover {
+  background-color: rgba(0, 0, 0, 0.659);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .item {
+    height: 460px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  .item {
+    height: 600px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shop {
+    height: 2000px;
+  }
+
+  .item {
+    height: 700px;
+    max-width: 600px;
+  }
+}

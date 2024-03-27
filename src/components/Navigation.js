@@ -28,7 +28,7 @@ function Navigation() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const checkout = async () => {
-    await fetch(process.env.BACKEND_URL + "/checkout", {
+    await fetch(`${process.env.BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -28,7 +28,7 @@ function Navigation() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const checkout = async () => {
-    await fetch("http://localhost:4000/checkout", {
+    await fetch(process.env.BACKEND_URL + "/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,6 +41,7 @@ function Navigation() {
       .then((res) => {
         if (res.url) {
           window.location.assign(res.url);
+          console.log(res.url);
         }
       })
       .catch((err) => console.log(err));

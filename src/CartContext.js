@@ -73,14 +73,10 @@ function CartProvider({ children }) {
 
   function getTotalCost() {
     let totalCost = 0;
-    console.log(totalCost);
     productsArray.map((cartItem) => {
       const productData = getProductData(cartItem.id);
-      // prettier-ignore
-      console.log("total cost: " + getProductQuantity(cartItem.id));
       return (totalCost += productData.price * getProductQuantity(cartItem.id));
     });
-    console.log(totalCost);
     return totalCost.toFixed(2);
   }
 

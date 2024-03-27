@@ -9,6 +9,7 @@ import { CartContext } from "../CartContext";
 import "./Navigation.css";
 
 function Navigation() {
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce(
     (sum, product) => sum + product.quantity,
@@ -28,7 +29,7 @@ function Navigation() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const checkout = async () => {
-    await fetch(`${process.env.BACKEND_URL}/checkout`, {
+    await fetch(`${backendURL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
